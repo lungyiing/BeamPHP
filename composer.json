@@ -1,13 +1,12 @@
 {
   "name": "tama63/beam",
   "description": "WIP Beam API Library for PHP",
-  "version": "0.0.2",
   "type": "library",
   "license": "MIT",
   "require": {
     "guzzlehttp/guzzle": "~5.2"
   },
   "autoload": {
-    "psr-4": {"Tama63\\Beam": "src/"}
+    "psr-4": {"Tama63\\Beam\\": "src/"}
   }
 }
