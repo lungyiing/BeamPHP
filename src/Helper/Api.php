@@ -35,7 +35,12 @@ class Api
         if ($response->getStatusCode() != '200') {
             throw new \Exception('Unable to resolve Beam API endpoint');
         } else {
-            return $response->json();
+            // Some returns from the api aren't json...
+            if (Validate::json($response->json())) {
+                return $response->json();
+            } else {
+                return $response->getBody();
+            }
         }
 
     }

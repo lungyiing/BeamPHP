@@ -50,4 +50,14 @@ class Validate
             throw new \Exception('Parameter must meet minimum string length');
         }
     }
+
+    /**
+     * Checks if a string is json
+     *
+     * @param $string
+     * @return bool
+     */
+    public static function json($string) {
+        return is_string($string) && is_object(json_decode($string)) ? true : false;
+    }
 }
