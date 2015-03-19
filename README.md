@@ -16,6 +16,7 @@ Current endpoints that have been included are as follows:
 * Channels()
 * Achievements()
 * Shop()
+* Chat()
 
 The classes can be initialised by calling (for example):
 
