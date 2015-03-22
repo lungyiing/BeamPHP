@@ -1,0 +1,1304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project title="API Documentation" version="v2.8.2">
+  <partials/>
+  <file path="Helper\Api.php" generated-path="Helper.Api.html" hash="98d68b71d59ce2b7517ae34f61c65aa8" package="Default">
+    <docblock line="0">
+      <description>Beam API Library for PHP</description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+      <tag name="author" line="0" description="Chris Ireland"/>
+      <tag name="license" line="0" description="MIT &lt;http://opensource.org/licenses/MIT&gt;"/>
+    </docblock>
+    <namespace-alias name="Client">\GuzzleHttp\Client</namespace-alias>
+    <class final="false" abstract="false" namespace="Tama63\Beam\Helper" line="13" package="Default">
+      <extends/>
+      <name>Api</name>
+      <full_name>\Tama63\Beam\Helper\Api</full_name>
+      <docblock line="13">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="13" description="Default"/>
+      </docblock>
+      <constant namespace="Tama63\Beam\Helper" line="16" package="Default">
+        <name>API_URL</name>
+        <full_name>\Tama63\Beam\Helper\Api::API_URL</full_name>
+        <value>'https://beam.pro/api/v1'</value>
+        <docblock line="16">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </constant>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Tama63\Beam\Helper" line="26" package="Default">
+        <name>query</name>
+        <full_name>\Tama63\Beam\Helper\Api::query()</full_name>
+        <docblock line="26">
+          <description>Sends a query to the Beam API endpoint with a user defined endpoint</description>
+          <long-description></long-description>
+          <tag name="param" line="26" description="&lt;p&gt;The url endpoint relative to the Beam API&lt;/p&gt;" type="string" variable="$endpoint">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="26" description="&lt;p&gt;Get parameters to be passed to the endpoint&lt;/p&gt;" type="null" variable="$params">
+            <type>null</type>
+          </tag>
+          <tag name="return" line="26" description="$response Either a plain body or array response" type="mixed">
+            <type>mixed</type>
+          </tag>
+          <tag name="throws" line="26" description="" type="\Exception">
+            <type>\Exception</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$endpoint</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$params</name>
+          <default>null</default>
+          <type>null</type>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="13" code="PPC:ERR-50005">No summary for class \Tama63\Beam\Helper\Api</error>
+    </parse_markers>
+    <source>eJxtU9tuGjEQfUfiH6YSEhe1bJpKfYAkzUVRgpRKtJA+IVVmd5Z1ZWzH9kJIlH/v2HuBsPGT7Zk5Pmfm+OyHznS7FQ0G7RYM4BrZGq6mE3jgS8PMDlJlYHo/DcFLlruMzjeZ4RYmBgWTSRERPEZpEX5O5nCWOadHUaQ0XancxDhUZhWVKTainAtfFbVb7ZZka7SaxQhztmbfvy08g8U9Co1m7BParZxw7/KXF4H3BLy4ERylC7FYMGvhSvN269WfgVaspHVewt/H3w9wDl3PxhKdJQEPtVER0zzafO2Oq4pCu18DmKFMLDB4ypHEOwUuw31TKKgVlw623GWURcwMJJhyiUkdrLBqzEvNDAFYZ7hcQacGmRN0bsQe1TfU8Q0ev3uMJHMhoBP2Fu7QQdiiQ2N96RLpwlqiVOIcM4NLgy43Etb8mbI6hiag/PRuSRYpYqAF4xKWKtkBzZsZw3ZQZe1RXGbU1sLi9jlG7biSVSgqNtRsh7GjJ9Jcxj6h6Guv7sHnWsZ5UNUvCl9LID+cCCaSO1gFA+zvO3Gwga/DLRSe6PXrmZalv4oxHs4wjM7fULdxwwjiqD0evO7IefXQl4sVup5FkY5GlbmG0BTSoDBJy9dKxFglCNzKroPTkxMfk7BFyNgG/d0S6cyWIpjgqabf5MhT6NU8A7uZYy63N4Tf68Mncj7hd/uHzfQrDC00bT+3XvdRVm8SpBKbD0zf9dIqlDdAQWKOsEnuTK29WG8vC6lR60Cfvhy5KAj8Z5UcDofvC72YP0zwhDkcjXzKobZw7vcbUvwqndzIHr9P/ZjvxwDUymtyfhPjQH41ZNq8/QcfkoeS</source>
+  </file>
+  <file path="Channels.php" generated-path="Channels.html" hash="343e441afc23b0daf37caec7eabd56c1" package="Default">
+    <docblock line="0">
+      <description>Channels is part of the Beam API Library for PHP</description>
+      <long-description>Channels provides an interface for the /channels/ endpoint of the Beam API</long-description>
+      <tag name="package" line="0" description="Default"/>
+      <tag name="author" line="0" description="Chris Ireland"/>
+      <tag name="license" line="0" description="MIT &lt;http://opensource.org/licenses/MIT&gt;"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="Tama63\Beam" line="14" package="Default">
+      <extends>\Tama63\Beam\Helper\Api</extends>
+      <name>Channels</name>
+      <full_name>\Tama63\Beam\Channels</full_name>
+      <docblock line="14">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="14" description="Default"/>
+        <tag name="inherited_from" description="\Tama63\Beam\Helper\Api" refers="\Tama63\Beam\Helper\Api" link="/classes/Tama63.Beam.Helper.Api.html"/>
+      </docblock>
+      <constant namespace="Tama63\Beam" line="17" package="Default">
+        <name>CHANNELS_API</name>
+        <full_name>\Tama63\Beam\Channels::CHANNELS_API</full_name>
+        <value>'/channels/'</value>
+        <docblock line="17">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </constant>
+      <constant namespace="Tama63\Beam" line="16" package="Default">
+        <name>API_URL</name>
+        <full_name>\Tama63\Beam\Helper\Api::API_URL</full_name>
+        <value>'https://beam.pro/api/v1'</value>
+        <docblock line="16">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </constant>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Tama63\Beam" line="31" package="Default">
+        <name>find</name>
+        <full_name>\Tama63\Beam\Channels::find()</full_name>
+        <docblock line="31">
+          <description>Returns a list of all the channels on beam
+&lt;https://developer.beam.pro/api/channel/find&gt;</description>
+          <long-description></long-description>
+          <tag name="param" line="31" description="&lt;p&gt;Specifies the attribute that for the order in which channels should be displayed&lt;/p&gt;" type="null" variable="$attribute">
+            <type>null</type>
+          </tag>
+          <tag name="param" line="31" description="&lt;p&gt;Order should be one of asc or desc&lt;/p&gt;" type="null" variable="$order">
+            <type>null</type>
+          </tag>
+          <tag name="param" line="31" description="&lt;p&gt;Filters the results to a specific subset. Valid values are: featured, partnered&lt;/p&gt;" type="null" variable="$only">
+            <type>null</type>
+          </tag>
+          <tag name="param" line="31" description="&lt;p&gt;Page of results to get&lt;/p&gt;" type="null" variable="$page">
+            <type>null</type>
+          </tag>
+          <tag name="param" line="31" description="&lt;p&gt;Number of results per page to retrieve&lt;/p&gt;" type="null" variable="$limit">
+            <type>null</type>
+          </tag>
+          <tag name="return" line="31" description="" type="mixed">
+            <type>mixed</type>
+          </tag>
+          <tag name="throws" line="31" description="" type="\Exception">
+            <type>\Exception</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$attribute</name>
+          <default>null</default>
+          <type>null</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$order</name>
+          <default>null</default>
+          <type>null</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$only</name>
+          <default>null</default>
+          <type>null</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$page</name>
+          <default>null</default>
+          <type>null</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$limit</name>
+          <default>null</default>
+          <type>null</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Tama63\Beam" line="50" package="Default">
+        <name>types</name>
+        <full_name>\Tama63\Beam\Channels::types()</full_name>
+        <docblock line="50">
+          <description>Return a list of all possible types of channels
+&lt;https://developer.beam.pro/api/channel/types&gt;</description>
+          <long-description></long-description>
+          <tag name="return" line="50" description="" type="mixed">
+            <type>mixed</type>
+          </tag>
+          <tag name="throws" line="50" description="" type="\Exception">
+            <type>\Exception</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Tama63\Beam" line="68" package="Default">
+        <name>inSlug</name>
+        <full_name>\Tama63\Beam\Channels::inSlug()</full_name>
+        <docblock line="68">
+          <description>Return all the channels in a particular slug/type
+&lt;https://developer.beam.pro/api/channel/inType&gt;</description>
+          <long-description></long-description>
+          <tag name="param" line="68" description="" type="" variable="$slug"/>
+          <tag name="param" line="68" description="&lt;p&gt;Specifies the attribute that for the order in which channels should be displayed&lt;/p&gt;" type="null" variable="$attribute">
+            <type>null</type>
+          </tag>
+          <tag name="param" line="68" description="&lt;p&gt;Order should be one of asc or desc&lt;/p&gt;" type="null" variable="$order">
+            <type>null</type>
+          </tag>
+          <tag name="param" line="68" description="&lt;p&gt;Filters the results to a specific subset. Valid values are: featured, partnered&lt;/p&gt;" type="null" variable="$only">
+            <type>null</type>
+          </tag>
+          <tag name="param" line="68" description="&lt;p&gt;Page of results to get&lt;/p&gt;" type="null" variable="$page">
+            <type>null</type>
+          </tag>
+          <tag name="param" line="68" description="&lt;p&gt;Number of results per page to retrieve&lt;/p&gt;" type="null" variable="$limit">
+            <type>null</type>
+          </tag>
+          <tag name="return" line="68" description="" type="mixed">
+            <type>mixed</type>
+          </tag>
+          <tag name="throws" line="68" description="" type="\Exception">
+            <type>\Exception</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$slug</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$attribute</name>
+          <default>null</default>
+          <type>null</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$order</name>
+          <default>null</default>
+          <type>null</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$only</name>
+          <default>null</default>
+          <type>null</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$page</name>
+          <default>null</default>
+          <type>null</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$limit</name>
+          <default>null</default>
+          <type>null</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Tama63\Beam" line="91" package="Default">
+        <name>search</name>
+        <full_name>\Tama63\Beam\Channels::search()</full_name>
+        <docblock line="91">
+          <description>Search channels using a scope and query
+&lt;https://developer.beam.pro/api/channel/search&gt;</description>
+          <long-description></long-description>
+          <tag name="param" line="91" description="&lt;p&gt;Scope specifies the channel attributes you want to search for using the $query&lt;/p&gt;" type="string" variable="$scope">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="91" description="&lt;p&gt;The string to search by, in the previously provided $scope&lt;/p&gt;" type="string" variable="$query">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="91" description="&lt;p&gt;Page of results to get&lt;/p&gt;" type="null" variable="$page">
+            <type>null</type>
+          </tag>
+          <tag name="param" line="91" description="&lt;p&gt;Number of results per page to retrieve&lt;/p&gt;" type="null" variable="$limit">
+            <type>null</type>
+          </tag>
+          <tag name="return" line="91" description="" type="mixed">
+            <type>mixed</type>
+          </tag>
+          <tag name="throws" line="91" description="" type="\Exception">
+            <type>\Exception</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$scope</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$query</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$page</name>
+          <default>null</default>
+          <type>null</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$limit</name>
+          <default>null</default>
+          <type>null</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Tama63\Beam" line="26" package="Default">
+        <name>query</name>
+        <full_name>\Tama63\Beam\Helper\Api::query()</full_name>
+        <docblock line="26">
+          <description>Sends a query to the Beam API endpoint with a user defined endpoint</description>
+          <long-description></long-description>
+          <tag name="param" line="26" description="&lt;p&gt;The url endpoint relative to the Beam API&lt;/p&gt;" type="string" variable="$endpoint">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="26" description="&lt;p&gt;Get parameters to be passed to the endpoint&lt;/p&gt;" type="null" variable="$params">
+            <type>null</type>
+          </tag>
+          <tag name="return" line="26" description="$response Either a plain body or array response" type="mixed">
+            <type>mixed</type>
+          </tag>
+          <tag name="throws" line="26" description="" type="\Exception">
+            <type>\Exception</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$endpoint</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$params</name>
+          <default>null</default>
+          <type>null</type>
+        </argument>
+        <inherited_from>\Tama63\Beam\Helper\Api</inherited_from>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="14" code="PPC:ERR-50005">No summary for class \Tama63\Beam\Channels</error>
+    </parse_markers>
+    <source>eJztV0tvGzcQvgvQf5iDgJUNVXsokIMcu3GNFDaQOEZl9BIHAbU70hKgSJbkyhaC/PfMkPuQHauxgaIt0uiw5mOe38x86335i63scJAfHg4HcAhnldAalQfpwQoXwCwhVAi/oljD6dUFvJELJ9wWlsbB1fkVK91XtM5sZIkehAapA7qlKDCKs528aORyQF1aQxIPXXQmX4k6VKR3VjmK5sKhErpMN0oWqD3C24treFmFYGd5biwdmdoVODVulTciPieZE9bKh4PhQIs1essRXYu1ePHzDXs94pvhoFDC+z4RvAsUoodzVBbdzamVw8EnlgP6FUb7AGfnp5eXr9/MPzIyx5D12WVHrWRCln+H8DuG2mmCBpT0MXGhVEy+VQSjYUEhdSoxO0/plbhBRTm6Kd9PCeZcWNl6zJdSlyetVqf9impIqOqa3IxECE4u6oAwt1jIpaQise/+PFQidKUyrkRHJYTbShZVH6GvTK1KihJK6a0SWywf95cMvIvPXslojIn7gjwANUqxR1urLfwmFXVQCtOhr1WgtSH8fMqgAF8vPIYp/CGULGEjVM2t53AGSxSENpaT2Mga3b44rVghXPGD4trxssLwuIKSaxngsl4vKLMdHSoORGOk7JBApZL1FlwsPqzl3W4goXLm1sPN67sCbZBGt1d5Wth6QZ0My1oXfAtc5/FOKY9jTJMW7X7L8HW7GFW3S/Gn7UFy86lxyw2bJzAFWZfa1sH3d80stPezWTQ1Ts4n8D6jsmYTyLis2YeDo29rdpmwNgUtNbKBtni87srHGx5g/ruReEud8TGYIFTUMEoZPuINd0VBdnn7pDAYLo7gcb9/bYI4bBwR/rZU9HbQcQP/mrYYhUr6n07+rNFtxx7VcjbbZZeIDoOcwfHJ7ihPIZtl9GxLwBhuk1DKKePI0gGv6CAGkU7issvu837OekBZ1ngvF4o6fWtp3ui0pYdnE1e08Ahz/T3jEq2Pv27yp6HO6EYL2ZMgesjlkmHjLpJFrQSRoKpXMd9ngyT1Nant5fcRW/5B+t8t6Us9pwKPY5kn8IP9/2/s3/FQHqme24CPun83s3/v9TBH4XaJovZSr3hWC2Iz+gYoISb1bMbz0e5exvOUIPkZJTfz+PT3CK4x1BOdh62p4VbQFweNarIfeS+FzDqj+7E+8BUv4ZrkmpPezIKQJNJkG9bhRpra0wA2n0JlE+Z3QEQp3XHKZ9JA8g8wTOPvfSSAOONBBtWs4guaFvT+/Y/MaoIpTmWMPE1Tk0QWNdNRg9/zhvDzFwjG0Mk=</source>
+  </file>
+  <file path="User.php" generated-path="User.html" hash="a7f6b6ca7fe69353916d26bf0796a69b" package="Default">
+    <docblock line="0">
+      <description>User is part of the Beam API Library for PHP</description>
+      <long-description>User provides an interface for the /users/ endpoint of the Beam API but for single users</long-description>
+      <tag name="package" line="0" description="Default"/>
+      <tag name="author" line="0" description="Chris Ireland"/>
+      <tag name="license" line="0" description="MIT &lt;http://opensource.org/licenses/MIT&gt;"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="Tama63\Beam" line="14" package="Default">
+      <extends>\Tama63\Beam\Helper\Api</extends>
+      <name>User</name>
+      <full_name>\Tama63\Beam\User</full_name>
+      <docblock line="14">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="14" description="Default"/>
+        <tag name="inherited_from" description="\Tama63\Beam\Helper\Api" refers="\Tama63\Beam\Helper\Api" link="/classes/Tama63.Beam.Helper.Api.html"/>
+      </docblock>
+      <constant namespace="Tama63\Beam" line="17" package="Default">
+        <name>USER_API</name>
+        <full_name>\Tama63\Beam\User::USER_API</full_name>
+        <value>'/users/'</value>
+        <docblock line="17">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </constant>
+      <constant namespace="Tama63\Beam" line="16" package="Default">
+        <name>API_URL</name>
+        <full_name>\Tama63\Beam\Helper\Api::API_URL</full_name>
+        <value>'https://beam.pro/api/v1'</value>
+        <docblock line="16">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </constant>
+      <property static="false" visibility="private" namespace="Tama63\Beam" line="19" package="Default">
+        <name>$userID</name>
+        <full_name>\Tama63\Beam\User::userID</full_name>
+        <default></default>
+        <docblock line="19">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="Tama63\Beam" line="20" package="Default">
+        <name>$userEndpoint</name>
+        <full_name>\Tama63\Beam\User::userEndpoint</full_name>
+        <default></default>
+        <docblock line="20">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Tama63\Beam" line="28" package="Default">
+        <name>__construct</name>
+        <full_name>\Tama63\Beam\User::__construct()</full_name>
+        <docblock line="28">
+          <description>Creates a user instance using an id</description>
+          <long-description></long-description>
+          <tag name="param" line="28" description="&lt;p&gt;The id of a user&lt;/p&gt;" type="integer" variable="$userID">
+            <type>integer</type>
+          </tag>
+          <tag name="throws" line="28" description="" type="\Exception">
+            <type>\Exception</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$userID</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Tama63\Beam" line="44" package="Default">
+        <name>info</name>
+        <full_name>\Tama63\Beam\User::info()</full_name>
+        <docblock line="44">
+          <description>Returns information about the user
+&lt;https://developer.beam.pro/api/user/findOne&gt;</description>
+          <long-description></long-description>
+          <tag name="return" line="44" description="" type="mixed">
+            <type>mixed</type>
+          </tag>
+          <tag name="throws" line="44" description="" type="\Exception">
+            <type>\Exception</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Tama63\Beam" line="58" package="Default">
+        <name>following</name>
+        <full_name>\Tama63\Beam\User::following()</full_name>
+        <docblock line="58">
+          <description>Returns a list of the channels a user follows
+&lt;https://developer.beam.pro/api/user/follows&gt;</description>
+          <long-description></long-description>
+          <tag name="param" line="58" description="&lt;p&gt;Page of results to get&lt;/p&gt;" type="null" variable="$page">
+            <type>null</type>
+          </tag>
+          <tag name="param" line="58" description="&lt;p&gt;Number of results per page to retrieve&lt;/p&gt;" type="null" variable="$limit">
+            <type>null</type>
+          </tag>
+          <tag name="return" line="58" description="" type="mixed">
+            <type>mixed</type>
+          </tag>
+          <tag name="throws" line="58" description="" type="\Exception">
+            <type>\Exception</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$page</name>
+          <default>null</default>
+          <type>null</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$limit</name>
+          <default>null</default>
+          <type>null</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Tama63\Beam" line="74" package="Default">
+        <name>achievements</name>
+        <full_name>\Tama63\Beam\User::achievements()</full_name>
+        <docblock line="74">
+          <description>Lists the progress of a user on Beam's achievements
+&lt;https://developer.beam.pro/api/achievement/forUser&gt;</description>
+          <long-description></long-description>
+          <tag name="return" line="74" description="" type="mixed">
+            <type>mixed</type>
+          </tag>
+          <tag name="throws" line="74" description="" type="\Exception">
+            <type>\Exception</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Tama63\Beam" line="26" package="Default">
+        <name>query</name>
+        <full_name>\Tama63\Beam\Helper\Api::query()</full_name>
+        <docblock line="26">
+          <description>Sends a query to the Beam API endpoint with a user defined endpoint</description>
+          <long-description></long-description>
+          <tag name="param" line="26" description="&lt;p&gt;The url endpoint relative to the Beam API&lt;/p&gt;" type="string" variable="$endpoint">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="26" description="&lt;p&gt;Get parameters to be passed to the endpoint&lt;/p&gt;" type="null" variable="$params">
+            <type>null</type>
+          </tag>
+          <tag name="return" line="26" description="$response Either a plain body or array response" type="mixed">
+            <type>mixed</type>
+          </tag>
+          <tag name="throws" line="26" description="" type="\Exception">
+            <type>\Exception</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$endpoint</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$params</name>
+          <default>null</default>
+          <type>null</type>
+        </argument>
+        <inherited_from>\Tama63\Beam\Helper\Api</inherited_from>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="14" code="PPC:ERR-50005">No summary for class \Tama63\Beam\User</error>
+      <error line="19" code="PPC:ERR-50007">No summary for property $userID</error>
+      <error line="20" code="PPC:ERR-50007">No summary for property $userEndpoint</error>
+    </parse_markers>
+    <source>eJy1VE1PGzEQvUfKf5gD0oaIZg+VekhICgUkItE2otBLqZB3d5K15LVdf6QgxH/v2PtBgKjQqvUhytpvxm/evPH+e13qfi8dDvs9GMKlRQPcgmbGgVqCKxE+IKvgcDGHM54ZZm5hqQwsThch4CFIG7XmBVpgErh0aJYsxwgNOVJPGJsCykIrOn6WO/Mugi2XK4EQ4d0FB8y7kg6PSkPc5gYFk0V9IniO0iJ8nF/AfumcHqep0rSlvMlxpMwqbSA2JcwsRKX9Xr8nWYVWB44XrGLv3l4FKpNw0u/lgllbl4U3jjhbOEWh0Vwdat7v3QUM0MqVtA4uv5ycX4cappA0dSaTFqINXzOHsBMO5seTLbsnjSZdTN2MsIZwZJCApGqUhJS1jsk8CERCRa2LFtvFHFD3SNYgc3MtXJDWvAiq14kesK406qeFq5ObHLXjSrZHaUPVZyQgLL3MwylcX8eqjc/doMm+WyPvmshQQQrzYwu2VF4UkCFIX6GhNCioV8wQGblmouNOqxH4a9ilisdjot9d0EkT1o4ruX0zayqbPpH2CaIVl3AWxXI87ro1epyoCb/f1oRzdN5IS6TJohWLOrBMkWWDhx/pGT1oyYQFrlGQE80oI2ONaDxSpnn0R7rksvgscfa8cybeBBW/weLvexR4Dp53pUnelP3Do7kdbJFq9zVSMBDcdmOcl0xK6m1r06USghj/oSp10BZVaj9LLwTsaLZCWIQfutug9cJZcApW6LYHCF5xB598lRGxjRgdHq2Qh4JJGcOJ2r9uRF0STeqg5j2NnPZaUvXn1vFp54B6qb2zL81JyL47eQkVb308TK/0BE1LUhdDz1uyB9+ScGMC01ndkT1IYvJ6J/79/lsfnZF7bPQOeWBFPbEPjxOQcuE1TshPeRn6UqF0r3fTRhCZyoR3/L+N2ibBvx+5IO9mpmRDu/tfnzo+PQ==</source>
+  </file>
+  <file path="Users.php" generated-path="Users.html" hash="bc1cda5658457171ce635b17800e1e22" package="Default">
+    <docblock line="0">
+      <description>Users is part of the Beam API Library for PHP</description>
+      <long-description>Use provides an interface for the /users/ endpoint of the Beam API</long-description>
+      <tag name="package" line="0" description="Default"/>
+      <tag name="author" line="0" description="Chris Ireland"/>
+      <tag name="license" line="0" description="MIT &lt;http://opensource.org/licenses/MIT&gt;"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="Tama63\Beam" line="14" package="Default">
+      <extends>\Tama63\Beam\Helper\Api</extends>
+      <name>Users</name>
+      <full_name>\Tama63\Beam\Users</full_name>
+      <docblock line="14">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="14" description="Default"/>
+        <tag name="inherited_from" description="\Tama63\Beam\Helper\Api" refers="\Tama63\Beam\Helper\Api" link="/classes/Tama63.Beam.Helper.Api.html"/>
+      </docblock>
+      <constant namespace="Tama63\Beam" line="16" package="Default">
+        <name>USERS_API</name>
+        <full_name>\Tama63\Beam\Users::USERS_API</full_name>
+        <value>'/users/'</value>
+        <docblock line="16">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </constant>
+      <constant namespace="Tama63\Beam" line="16" package="Default">
+        <name>API_URL</name>
+        <full_name>\Tama63\Beam\Helper\Api::API_URL</full_name>
+        <value>'https://beam.pro/api/v1'</value>
+        <docblock line="16">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </constant>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Tama63\Beam" line="28" package="Default">
+        <name>search</name>
+        <full_name>\Tama63\Beam\Users::search()</full_name>
+        <docblock line="28">
+          <description>Search for users based on a query of usernames
+&lt;https://developer.beam.pro/api/user/search&gt;</description>
+          <long-description></long-description>
+          <tag name="param" line="28" description="&lt;p&gt;The prefix of the username to query with. Must be at least two characters long, or an empty array will be returned&lt;/p&gt;" type="string" variable="$query">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="28" description="&lt;p&gt;Page of results to get&lt;/p&gt;" type="null" variable="$page">
+            <type>null</type>
+          </tag>
+          <tag name="param" line="28" description="&lt;p&gt;Number of results per page to retrieve&lt;/p&gt;" type="null" variable="$limit">
+            <type>null</type>
+          </tag>
+          <tag name="return" line="28" description="" type="mixed">
+            <type>mixed</type>
+          </tag>
+          <tag name="throws" line="28" description="" type="\Exception">
+            <type>\Exception</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$query</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$page</name>
+          <default>null</default>
+          <type>null</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$limit</name>
+          <default>null</default>
+          <type>null</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Tama63\Beam" line="26" package="Default">
+        <name>query</name>
+        <full_name>\Tama63\Beam\Helper\Api::query()</full_name>
+        <docblock line="26">
+          <description>Sends a query to the Beam API endpoint with a user defined endpoint</description>
+          <long-description></long-description>
+          <tag name="param" line="26" description="&lt;p&gt;The url endpoint relative to the Beam API&lt;/p&gt;" type="string" variable="$endpoint">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="26" description="&lt;p&gt;Get parameters to be passed to the endpoint&lt;/p&gt;" type="null" variable="$params">
+            <type>null</type>
+          </tag>
+          <tag name="return" line="26" description="$response Either a plain body or array response" type="mixed">
+            <type>mixed</type>
+          </tag>
+          <tag name="throws" line="26" description="" type="\Exception">
+            <type>\Exception</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$endpoint</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$params</name>
+          <default>null</default>
+          <type>null</type>
+        </argument>
+        <inherited_from>\Tama63\Beam\Helper\Api</inherited_from>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="14" code="PPC:ERR-50005">No summary for class \Tama63\Beam\Users</error>
+    </parse_markers>
+    <source>eJyFU8FqGzEQvRv8D3MwrGNc7yHQgxO7SUsghqaY2umlLkXeHXsFWkmVZmOHkn/vSNq1QyitDotWM+/Nm6fR9Qdb2X4vH436PRjBo0fnQXqwwhGYHVCF8BFFDbfLBXyWWyfcM+yMg+X9MiA6FFhnnmSJHoQGqQndThQYMwNF3gTiHFCX1nD4LfWJ6kY0VDHoU+VYxcKhErpMESUL1FzpYbGG64rITvPcWD4yjStwYtw+b1N8zjnzgMr7vX5Pixq9DXLWohbvLzeh6lWI9HuFEt63beORWJ+He1QW3ebWSvjNJLzStzDaEzyu7r6ufgY7ZpC1fWWRLeQkI8MawQqFK6roQUyDrfBYgtEg4FeDbCS7ECJR4AkWe/PcXIlPqLhDN9my4Ak7nAsrY8ncR+55BzqBb/ji2FJPTuo9DFKZdRXuB3fy2PneVQUyrZSDpGoCDw13uEUQBAoF7+lgoKiYs6DQgTJ6PwZuiG8Za0vPIJwTAa1UwDmkxmks3+rRDccHVuwRluHDMhz6RpEPCvZIfwcoWUuCL029Rfcaw55AJGMwl3SSnTozJBFQy+NrIVQ5c/CwuTsWaEka3YXytLHNlscHdo0uQhSSw8Nk4bgVP4vCxp2y9HuRCNpZiVOQwzehZCkI+THYhvw51k5XF59OFeo9nQtdXlz9I5nfzjBK+X9WlHhxmsywWmcGVEn/bh4LDj2q3XR6nuoJZKn1bAzfs5iTwWwOnb4sVE8nYccHsVA6idsfnbaXfu/lD/IBVF4=</source>
+  </file>
+  <file path="Shop.php" generated-path="Shop.html" hash="fd89f925fac6e270239d29dfd508cb9f" package="Default">
+    <docblock line="0">
+      <description>Shop is part of the Beam API Library for PHP</description>
+      <long-description>Shop provides an interface for the /shop/ endpoint of the Beam API</long-description>
+      <tag name="package" line="0" description="Default"/>
+      <tag name="author" line="0" description="Chris Ireland"/>
+      <tag name="license" line="0" description="MIT &lt;http://opensource.org/licenses/MIT&gt;"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="Tama63\Beam" line="14" package="Default">
+      <extends>\Tama63\Beam\Helper\Api</extends>
+      <name>Shop</name>
+      <full_name>\Tama63\Beam\Shop</full_name>
+      <docblock line="14">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="14" description="Default"/>
+        <tag name="inherited_from" description="\Tama63\Beam\Helper\Api" refers="\Tama63\Beam\Helper\Api" link="/classes/Tama63.Beam.Helper.Api.html"/>
+      </docblock>
+      <constant namespace="Tama63\Beam" line="17" package="Default">
+        <name>USER_API</name>
+        <full_name>\Tama63\Beam\Shop::USER_API</full_name>
+        <value>'/shop/'</value>
+        <docblock line="17">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </constant>
+      <constant namespace="Tama63\Beam" line="16" package="Default">
+        <name>API_URL</name>
+        <full_name>\Tama63\Beam\Helper\Api::API_URL</full_name>
+        <value>'https://beam.pro/api/v1'</value>
+        <docblock line="16">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </constant>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Tama63\Beam" line="26" package="Default">
+        <name>categories</name>
+        <full_name>\Tama63\Beam\Shop::categories()</full_name>
+        <docblock line="26">
+          <description>Returns a list of all the categories in the shop
+&lt;https://developer.beam.pro/api/shop/categories&gt;</description>
+          <long-description></long-description>
+          <tag name="return" line="26" description="" type="mixed">
+            <type>mixed</type>
+          </tag>
+          <tag name="throws" line="26" description="" type="\Exception">
+            <type>\Exception</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Tama63\Beam" line="41" package="Default">
+        <name>inCategory</name>
+        <full_name>\Tama63\Beam\Shop::inCategory()</full_name>
+        <docblock line="41">
+          <description>Returns a list of all the items in a shop's category
+&lt;https://developer.beam.pro/api/shop/inCategory&gt;</description>
+          <long-description></long-description>
+          <tag name="param" line="41" description="&lt;p&gt;Category id to search in&lt;/p&gt;" type="integer" variable="$categoryID">
+            <type>integer</type>
+          </tag>
+          <tag name="param" line="41" description="&lt;p&gt;Specifies the attribute that for the order in which items should be displayed&lt;/p&gt;" type="null" variable="$attribute">
+            <type>null</type>
+          </tag>
+          <tag name="param" line="41" description="&lt;p&gt;Order should be one of asc or desc&lt;/p&gt;" type="null" variable="$order">
+            <type>null</type>
+          </tag>
+          <tag name="return" line="41" description="" type="mixed">
+            <type>mixed</type>
+          </tag>
+          <tag name="throws" line="41" description="" type="\Exception">
+            <type>\Exception</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$categoryID</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$attribute</name>
+          <default>null</default>
+          <type>null</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$order</name>
+          <default>null</default>
+          <type>null</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Tama63\Beam" line="58" package="Default">
+        <name>item</name>
+        <full_name>\Tama63\Beam\Shop::item()</full_name>
+        <docblock line="58">
+          <description>Returns information about a shop item
+&lt;https://developer.beam.pro/api/shop/findOne&gt;</description>
+          <long-description></long-description>
+          <tag name="param" line="58" description="&lt;p&gt;The item id to display&lt;/p&gt;" type="integer" variable="$itemID">
+            <type>integer</type>
+          </tag>
+          <tag name="return" line="58" description="" type="mixed">
+            <type>mixed</type>
+          </tag>
+          <tag name="throws" line="58" description="" type="\Exception">
+            <type>\Exception</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$itemID</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Tama63\Beam" line="26" package="Default">
+        <name>query</name>
+        <full_name>\Tama63\Beam\Helper\Api::query()</full_name>
+        <docblock line="26">
+          <description>Sends a query to the Beam API endpoint with a user defined endpoint</description>
+          <long-description></long-description>
+          <tag name="param" line="26" description="&lt;p&gt;The url endpoint relative to the Beam API&lt;/p&gt;" type="string" variable="$endpoint">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="26" description="&lt;p&gt;Get parameters to be passed to the endpoint&lt;/p&gt;" type="null" variable="$params">
+            <type>null</type>
+          </tag>
+          <tag name="return" line="26" description="$response Either a plain body or array response" type="mixed">
+            <type>mixed</type>
+          </tag>
+          <tag name="throws" line="26" description="" type="\Exception">
+            <type>\Exception</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$endpoint</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$params</name>
+          <default>null</default>
+          <type>null</type>
+        </argument>
+        <inherited_from>\Tama63\Beam\Helper\Api</inherited_from>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="14" code="PPC:ERR-50005">No summary for class \Tama63\Beam\Shop</error>
+    </parse_markers>
+    <source>eJytVE1PGzEQvUfKf5gD0oYozR4q9RAghVIkIrUCAe2loMjxTlhLu7bxByRC/HfG3k9RVBXEHqLYM+/NzJsZ73/VuR4O0vF4OIAxXOZKg7CgmXGg1uByhG/ISjg6X8APsTLMbGGtDJyfngdAB9JG3YsMLTAJQjo0a8YxugaO1JJPCigzrcj6krqlOmTe5YQ5zg1lsTBYMJlVlkJwlBbh5+IK9nPn9CxNlaYr5Q3HqTK3ae1iU/KZB1Q6HAwHkpVodcjmipXsy+frEHUvWIYDXjBrqwJw4yg9C6dYaDTXR1oMB4/BB+jjSloHvy5PLpZBiQNIqoqSvcajUjB8Y7hA540kKaAQNhbLiiIWzJnDW2UE6SRkvAk0LTDWZamwDO+xoOrMdEXJTknclGlRxew45g2wJTg0MTSUYoNZd+tyox4sXJ9sOGonlGxMafVH+xVpB2svebD20hztVh6PNYK+OsSOy4X9NL/zaLYji8V6Nmv1mULSUSS7exX46W1aCYdllIlFkRLbpLV9m15CHte4V/SiQacRDCO507AvvkMDAJGBU2CRGZ6T10uc9JTrDnPOiJV3CJcauViH7oYCunuXM9fugjIZmlDXQy4CayyTMvVFBiuETFhdsG2/ff1gFfos/nYgJTFKZznRA60h/+iR6FQc9ZSa9Ks/iClOmhyr49/zk6bwmxUiIxJi1d7ZzlYvX2Ofzagz/XjNKL3qW4hSkHeb0AT+JCJLJpA44QoMf4IyRsR6w1HT05EzejHCgXtjUPLtkivrojU8VbY9lmyzpIBLb9E05zvPJJFvI94gpZEdRWevs/pws9u+Ee/ZnjShc382yZrGmUlCfVHqBA7m/UaQyyzConVy818LKCQNaMlis9lKeVfvXRzQt23cWsjsTOK/1y3QUjlX9abXq1ZP/4dPL0UY1SE/YiJrpnd0NrauampHUjfn6RlUzkQU</source>
+  </file>
+  <file path="Channel.php" generated-path="Channel.html" hash="388dd38db1c2292e7050d2e11cad0a6b" package="Default">
+    <docblock line="0">
+      <description>Channel is part of the Beam API Library for PHP</description>
+      <long-description>Channel provides an interface for the /channels/ endpoint of the Beam API but for single channels</long-description>
+      <tag name="package" line="0" description="Default"/>
+      <tag name="author" line="0" description="Chris Ireland"/>
+      <tag name="license" line="0" description="MIT &lt;http://opensource.org/licenses/MIT&gt;"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="Tama63\Beam" line="14" package="Default">
+      <extends>\Tama63\Beam\Helper\Api</extends>
+      <name>Channel</name>
+      <full_name>\Tama63\Beam\Channel</full_name>
+      <docblock line="14">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="14" description="Default"/>
+        <tag name="inherited_from" description="\Tama63\Beam\Helper\Api" refers="\Tama63\Beam\Helper\Api" link="/classes/Tama63.Beam.Helper.Api.html"/>
+      </docblock>
+      <constant namespace="Tama63\Beam" line="17" package="Default">
+        <name>CHANNEL_API</name>
+        <full_name>\Tama63\Beam\Channel::CHANNEL_API</full_name>
+        <value>'/channels/'</value>
+        <docblock line="17">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </constant>
+      <constant namespace="Tama63\Beam" line="16" package="Default">
+        <name>API_URL</name>
+        <full_name>\Tama63\Beam\Helper\Api::API_URL</full_name>
+        <value>'https://beam.pro/api/v1'</value>
+        <docblock line="16">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </constant>
+      <property static="false" visibility="private" namespace="Tama63\Beam" line="19" package="Default">
+        <name>$channelID</name>
+        <full_name>\Tama63\Beam\Channel::channelID</full_name>
+        <default></default>
+        <docblock line="19">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="Tama63\Beam" line="20" package="Default">
+        <name>$channelEndpoint</name>
+        <full_name>\Tama63\Beam\Channel::channelEndpoint</full_name>
+        <default></default>
+        <docblock line="20">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Tama63\Beam" line="28" package="Default">
+        <name>__construct</name>
+        <full_name>\Tama63\Beam\Channel::__construct()</full_name>
+        <docblock line="28">
+          <description>Create a channel instance using an id</description>
+          <long-description></long-description>
+          <tag name="param" line="28" description="&lt;p&gt;The id of a channel&lt;/p&gt;" type="integer" variable="$channelID">
+            <type>integer</type>
+          </tag>
+          <tag name="throws" line="28" description="" type="\Exception">
+            <type>\Exception</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$channelID</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Tama63\Beam" line="44" package="Default">
+        <name>info</name>
+        <full_name>\Tama63\Beam\Channel::info()</full_name>
+        <docblock line="44">
+          <description>Return information about the channel
+&lt;https://developer.beam.pro/api/channel/findOne&gt;</description>
+          <long-description></long-description>
+          <tag name="return" line="44" description="" type="mixed">
+            <type>mixed</type>
+          </tag>
+          <tag name="throws" line="44" description="" type="\Exception">
+            <type>\Exception</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Tama63\Beam" line="58" package="Default">
+        <name>followers</name>
+        <full_name>\Tama63\Beam\Channel::followers()</full_name>
+        <docblock line="58">
+          <description>Returns a list of all the channel's followers
+&lt;https://developer.beam.pro/api/channel/listFollowers&gt;</description>
+          <long-description></long-description>
+          <tag name="param" line="58" description="&lt;p&gt;Page of results to get&lt;/p&gt;" type="null" variable="$page">
+            <type>null</type>
+          </tag>
+          <tag name="param" line="58" description="&lt;p&gt;Number of results per page to retrieve&lt;/p&gt;" type="null" variable="$limit">
+            <type>null</type>
+          </tag>
+          <tag name="return" line="58" description="" type="mixed">
+            <type>mixed</type>
+          </tag>
+          <tag name="throws" line="58" description="" type="\Exception">
+            <type>\Exception</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$page</name>
+          <default>null</default>
+          <type>null</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$limit</name>
+          <default>null</default>
+          <type>null</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Tama63\Beam" line="26" package="Default">
+        <name>query</name>
+        <full_name>\Tama63\Beam\Helper\Api::query()</full_name>
+        <docblock line="26">
+          <description>Sends a query to the Beam API endpoint with a user defined endpoint</description>
+          <long-description></long-description>
+          <tag name="param" line="26" description="&lt;p&gt;The url endpoint relative to the Beam API&lt;/p&gt;" type="string" variable="$endpoint">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="26" description="&lt;p&gt;Get parameters to be passed to the endpoint&lt;/p&gt;" type="null" variable="$params">
+            <type>null</type>
+          </tag>
+          <tag name="return" line="26" description="$response Either a plain body or array response" type="mixed">
+            <type>mixed</type>
+          </tag>
+          <tag name="throws" line="26" description="" type="\Exception">
+            <type>\Exception</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$endpoint</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$params</name>
+          <default>null</default>
+          <type>null</type>
+        </argument>
+        <inherited_from>\Tama63\Beam\Helper\Api</inherited_from>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="14" code="PPC:ERR-50005">No summary for class \Tama63\Beam\Channel</error>
+      <error line="19" code="PPC:ERR-50007">No summary for property $channelID</error>
+      <error line="20" code="PPC:ERR-50007">No summary for property $channelEndpoint</error>
+    </parse_markers>
+    <source>eJytVE1PGzEQvUfKf5gD0gZE40OlHhKSQoGKSDSNKtRLqZB3d5K15LVdfwQQ4r8z3q+EJhJtVR+ixH4z8+a9mZx8NIXp99jRUb8HR3BecKVQgnBguPWgl+ALhE/ISzhbzOBapJbbR1hqC4urRYx5FWesXoscHXAFQnm0S55hhY5pWFbDHANUudGE2KmQBl/hnVAridBGdJVOefAFvZ8XlkjOLEqu8vpFigyVQ/gyu4GTwnszYkwbutLBZjjUdsUaiGOEmcYo1u/1e4qX6ExkesNL/uH9bWQzji/9Xia5c11/+OCJuYMrlAbt7ZkR/d5ThAGdTCvn4fzqbD6/vL6LzUwg2fScjFugsWLNPcJB8za7GO9/uGxU6iJrn+IhzS1GLG81IsGd54q6CFG8yoK8RXdRp+QrSR2l35SHG7JA5NGMLt0mwhdW3zu4vXzI0HihVfvEGtYhJV1hGVQWX+HurlLChswPNjUOa/BTExybYTC7cOAKHWQOKYIKJVrKRGpRX5YoqTWXXRN0Gt2/x1tqfjSiPrZrdELFc+AL4d5NN11OdhXfxbWaE9qhXI5G24YOd5I2eZ73OfQNfbBxEWigS15pw1NNAx4n/neZq4l1NLI5rlHS3NphSmM4pJVi3Ih2jthSqPyrwumus7YuV4oHzP/dvch2sGtWk7xp/1dA+zjYL9zh25LQ/wNI4art51Ju65E4Wn8p9T1a99faxJyf2+g9CtWzrwKVPDB8hbCIH0TCogvSO/AaVuj3B0hRCg/zUKZot2OIDVTJKJhUsoI4/m9TOkkGNe9Jxem4JVX/3Lth7aqQryZ499YqxeyH47dQVdXXy/bn80FLlLC6oeQYfiSxZAKTaW3JMSRV9vqm+vpza6KeXwDXhvrR</source>
+  </file>
+  <file path="Achievements.php" generated-path="Achievements.html" hash="10415028c02fd858a50a5572eaac9e77" package="Default">
+    <docblock line="0">
+      <description>Achievements is part of the Beam API Library for PHP</description>
+      <long-description>Achievements provides an interface for the /achievements/ endpoint of the Beam API</long-description>
+      <tag name="package" line="0" description="Default"/>
+      <tag name="author" line="0" description="Chris Ireland"/>
+      <tag name="license" line="0" description="MIT &lt;http://opensource.org/licenses/MIT&gt;"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="Tama63\Beam" line="14" package="Default">
+      <extends>\Tama63\Beam\Helper\Api</extends>
+      <name>Achievements</name>
+      <full_name>\Tama63\Beam\Achievements</full_name>
+      <docblock line="14">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="14" description="Default"/>
+        <tag name="inherited_from" description="\Tama63\Beam\Helper\Api" refers="\Tama63\Beam\Helper\Api" link="/classes/Tama63.Beam.Helper.Api.html"/>
+      </docblock>
+      <constant namespace="Tama63\Beam" line="17" package="Default">
+        <name>ACHIEVEMENTS_API</name>
+        <full_name>\Tama63\Beam\Achievements::ACHIEVEMENTS_API</full_name>
+        <value>'/achievements/'</value>
+        <docblock line="17">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </constant>
+      <constant namespace="Tama63\Beam" line="16" package="Default">
+        <name>API_URL</name>
+        <full_name>\Tama63\Beam\Helper\Api::API_URL</full_name>
+        <value>'https://beam.pro/api/v1'</value>
+        <docblock line="16">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </constant>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Tama63\Beam" line="26" package="Default">
+        <name>find</name>
+        <full_name>\Tama63\Beam\Achievements::find()</full_name>
+        <docblock line="26">
+          <description>Return a list of all the achievements on Beam
+&lt;https://developer.beam.pro/api/achievement/find&gt;</description>
+          <long-description></long-description>
+          <tag name="return" line="26" description="" type="mixed">
+            <type>mixed</type>
+          </tag>
+          <tag name="throws" line="26" description="" type="\Exception">
+            <type>\Exception</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Tama63\Beam" line="26" package="Default">
+        <name>query</name>
+        <full_name>\Tama63\Beam\Helper\Api::query()</full_name>
+        <docblock line="26">
+          <description>Sends a query to the Beam API endpoint with a user defined endpoint</description>
+          <long-description></long-description>
+          <tag name="param" line="26" description="&lt;p&gt;The url endpoint relative to the Beam API&lt;/p&gt;" type="string" variable="$endpoint">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="26" description="&lt;p&gt;Get parameters to be passed to the endpoint&lt;/p&gt;" type="null" variable="$params">
+            <type>null</type>
+          </tag>
+          <tag name="return" line="26" description="$response Either a plain body or array response" type="mixed">
+            <type>mixed</type>
+          </tag>
+          <tag name="throws" line="26" description="" type="\Exception">
+            <type>\Exception</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$endpoint</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$params</name>
+          <default>null</default>
+          <type>null</type>
+        </argument>
+        <inherited_from>\Tama63\Beam\Helper\Api</inherited_from>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="14" code="PPC:ERR-50005">No summary for class \Tama63\Beam\Achievements</error>
+    </parse_markers>
+    <source>eJxlUF1rwjAUfS/0P9yHga4w8zDYgzpnJwULc8gmexJGbG/XQJpkSeoU8b8vadWpu08h5+Pec4ZPqlRhQKIoDCCCOCsZrrFCYQ0wA4pqC7IAWyI8I60gnqfwwlaa6i0UUsN8OvfC/2Kl5ZrlaIAKYMKiLmiGjcR7EXrGJYAiV9KxrledrMe0tqXTTkrtrko1ciryFuEsQ2EQZukChqW1qk+IVO5L1jrDntRf5EAxxHFGXkXCIAwErdAof9WCVvThfum3DjwSBhmnxlwGwo11ZxqYIleol7FiYbDzXHCTSWEsxJNpmnwks+R18f7pm3qEzmXSzuCoaBv3E8Eb2loLoMCZaTqgnDc9nGtBiqaXk6oJa1za3FG4i6x7K4f3XPOEKna+mBRM5KOj8uQw1u3iim0w//u1pZY/BpbJJkNlmRRHiLQPVa9co1DUIvMoePPubYvtDlw3B/MbWzJzN/quUW+7BnnR71/3dDtoVXtfzv4XvAPErQ==</source>
+  </file>
+  <file path="Chat.php" generated-path="Chat.html" hash="8843cae580c535adc2f9f22ee6119a8e" package="Default">
+    <docblock line="0">
+      <description>Chat is part of the Beam API Library for PHP</description>
+      <long-description>Chat provides an interface for the /chats/ endpoint of the Beam API</long-description>
+      <tag name="package" line="0" description="Default"/>
+      <tag name="author" line="0" description="Chris Ireland"/>
+      <tag name="license" line="0" description="MIT &lt;http://opensource.org/licenses/MIT&gt;"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="Tama63\Beam" line="14" package="Default">
+      <extends>\Tama63\Beam\Helper\Api</extends>
+      <name>Chat</name>
+      <full_name>\Tama63\Beam\Chat</full_name>
+      <docblock line="14">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="14" description="Default"/>
+        <tag name="inherited_from" description="\Tama63\Beam\Helper\Api" refers="\Tama63\Beam\Helper\Api" link="/classes/Tama63.Beam.Helper.Api.html"/>
+      </docblock>
+      <constant namespace="Tama63\Beam" line="17" package="Default">
+        <name>CHAT_API</name>
+        <full_name>\Tama63\Beam\Chat::CHAT_API</full_name>
+        <value>'/chats/'</value>
+        <docblock line="17">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </constant>
+      <constant namespace="Tama63\Beam" line="16" package="Default">
+        <name>API_URL</name>
+        <full_name>\Tama63\Beam\Helper\Api::API_URL</full_name>
+        <value>'https://beam.pro/api/v1'</value>
+        <docblock line="16">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </constant>
+      <property static="false" visibility="private" namespace="Tama63\Beam" line="19" package="Default">
+        <name>$chatID</name>
+        <full_name>\Tama63\Beam\Chat::chatID</full_name>
+        <default></default>
+        <docblock line="19">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="Tama63\Beam" line="20" package="Default">
+        <name>$chatEndpoint</name>
+        <full_name>\Tama63\Beam\Chat::chatEndpoint</full_name>
+        <default></default>
+        <docblock line="20">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Tama63\Beam" line="28" package="Default">
+        <name>__construct</name>
+        <full_name>\Tama63\Beam\Chat::__construct()</full_name>
+        <docblock line="28">
+          <description>Create a new chat instance using an id</description>
+          <long-description></long-description>
+          <tag name="param" line="28" description="&lt;p&gt;The id of a chat (channel)&lt;/p&gt;" type="integer" variable="$chatID">
+            <type>integer</type>
+          </tag>
+          <tag name="throws" line="28" description="" type="\Exception">
+            <type>\Exception</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$chatID</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Tama63\Beam" line="46" package="Default">
+        <name>users</name>
+        <full_name>\Tama63\Beam\Chat::users()</full_name>
+        <docblock line="46">
+          <description>Returns a list of all the users in a chat
+&lt;https://developer.beam.pro/api/chat/user-list&gt;</description>
+          <long-description></long-description>
+          <tag name="param" line="46" description="&lt;p&gt;Page of results to get&lt;/p&gt;" type="null" variable="$page">
+            <type>null</type>
+          </tag>
+          <tag name="param" line="46" description="&lt;p&gt;Number of results per page to retrieve&lt;/p&gt;" type="null" variable="$limit">
+            <type>null</type>
+          </tag>
+          <tag name="return" line="46" description="" type="mixed">
+            <type>mixed</type>
+          </tag>
+          <tag name="throws" line="46" description="" type="\Exception">
+            <type>\Exception</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$page</name>
+          <default>null</default>
+          <type>null</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$limit</name>
+          <default>null</default>
+          <type>null</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Tama63\Beam" line="65" package="Default">
+        <name>search</name>
+        <full_name>\Tama63\Beam\Chat::search()</full_name>
+        <docblock line="65">
+          <description>Searches for a username in a chat by matching a scope in their username
+&lt;https://developer.beam.pro/api/chat/user-search&gt;</description>
+          <long-description></long-description>
+          <tag name="param" line="65" description="&lt;p&gt;The username to search by&lt;/p&gt;" type="string" variable="$username">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="65" description="&lt;p&gt;Page of results to get&lt;/p&gt;" type="null" variable="$page">
+            <type>null</type>
+          </tag>
+          <tag name="param" line="65" description="&lt;p&gt;Number of results per page to retrieve&lt;/p&gt;" type="null" variable="$limit">
+            <type>null</type>
+          </tag>
+          <tag name="return" line="65" description="" type="mixed">
+            <type>mixed</type>
+          </tag>
+          <tag name="throws" line="65" description="" type="\Exception">
+            <type>\Exception</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$username</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$page</name>
+          <default>null</default>
+          <type>null</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$limit</name>
+          <default>null</default>
+          <type>null</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Tama63\Beam" line="26" package="Default">
+        <name>query</name>
+        <full_name>\Tama63\Beam\Helper\Api::query()</full_name>
+        <docblock line="26">
+          <description>Sends a query to the Beam API endpoint with a user defined endpoint</description>
+          <long-description></long-description>
+          <tag name="param" line="26" description="&lt;p&gt;The url endpoint relative to the Beam API&lt;/p&gt;" type="string" variable="$endpoint">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="26" description="&lt;p&gt;Get parameters to be passed to the endpoint&lt;/p&gt;" type="null" variable="$params">
+            <type>null</type>
+          </tag>
+          <tag name="return" line="26" description="$response Either a plain body or array response" type="mixed">
+            <type>mixed</type>
+          </tag>
+          <tag name="throws" line="26" description="" type="\Exception">
+            <type>\Exception</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$endpoint</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$params</name>
+          <default>null</default>
+          <type>null</type>
+        </argument>
+        <inherited_from>\Tama63\Beam\Helper\Api</inherited_from>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="14" code="PPC:ERR-50005">No summary for class \Tama63\Beam\Chat</error>
+      <error line="19" code="PPC:ERR-50007">No summary for property $chatID</error>
+      <error line="20" code="PPC:ERR-50007">No summary for property $chatEndpoint</error>
+    </parse_markers>
+    <source>eJzdVMFOGzEQvUfKP8whUgIK2UOlHhKSQgGJSG0VtVEvpULO7iRryet1xzYFIf69Y6+zKSgUlSM+RFnPvJl5b97u8QdTmm4nOzzsduAQzkrhQFowghzUa3AlwkcUFZwu5vBJrkjQHaxrgsXlIgB2IEP1jSzQgtAgtUNaixxjaqiR5ZxjM0BdmJrDT2u3tU6EdyWDzkriMeaESuiiiSiZo7YIn+dLOC6dM+Msqw1f1Z5yHNW0yVKKzThnFlBZt9PtaFGhNWGcpajE+3dXoeskRLqdXAlrGwZ463g8C5eoDNLVqZHdzn3IAT55ra2Ds8vT5XWQYgr9RKk/2aYYkjfCIfRCYH4+2XN7kei3mEb3cFhGwpAoQONvyOMiuKfQPLe3Um+issU2vYWd8K5YxCBq6gxLVlYWQWPRFBrwr9aoDnYoV1L928LVxW2Oxslab0NZmtuvWE1Ye52HKFxfRwnI526Q+qRq9wkZ6GQwP7dgy9qrAlYI2ldIXAYVL04Qj6VvhGpZ8Elqfw+3TH88ZiJtg1ancHqulPZoljhOn+j8JGOrNOdZVOvxuF3d6HGhBH/Yt5Gv6DxptjQoaaNnhVLRt94iWSaTBG4R0ZeWjVngDSp2J41WbLYRvx2ZMDJ6Jgvgo1Bx9twytec+PSM2CIvww50JrVfOgqthg24/QMlKOvjiqxXS3xgeA2IxBhM6kjzcrgJFllDJWyxe74+oyKCZeRrnGW4Hah73umW7dpbSeGdfskWofjB5KSt2feydxDFt/pdHuhvsc8sI+pFIfwg/+qFbH6azZhND6MfCzU38+/PgX+75hoLykr+I4SMookDhS7RzDazuoBIuL+PLDTZnv4QoG0xSm/8Kb9nY+Vl38VscOvbaiZbJ0fGBPdLgebw34MuGy6AlO4S34tGsoRatumXXmHPH9X89/PAHqUhgkg==</source>
+  </file>
+  <file path="Helper\Validate.php" generated-path="Helper.Validate.html" hash="b08f31056a7307fb857de84a5e47d09c" package="Default">
+    <docblock line="0">
+      <description>Beam API Library for PHP</description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+      <tag name="author" line="0" description="Chris Ireland"/>
+      <tag name="license" line="0" description="MIT &lt;http://opensource.org/licenses/MIT&gt;"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="Tama63\Beam\Helper" line="11" package="Default">
+      <extends/>
+      <name>Validate</name>
+      <full_name>\Tama63\Beam\Helper\Validate</full_name>
+      <docblock line="11">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="11" description="Default"/>
+      </docblock>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Tama63\Beam\Helper" line="20" package="Default">
+        <name>int</name>
+        <full_name>\Tama63\Beam\Helper\Validate::int()</full_name>
+        <docblock line="20">
+          <description>Validate a parameter as an integer</description>
+          <long-description></long-description>
+          <tag name="param" line="20" description="&lt;p&gt;Any input&lt;/p&gt;" type="mixed" variable="$param">
+            <type>mixed</type>
+          </tag>
+          <tag name="throws" line="20" description="" type="\Exception">
+            <type>\Exception</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$param</name>
+          <default></default>
+          <type>mixed</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Tama63\Beam\Helper" line="34" package="Default">
+        <name>limit</name>
+        <full_name>\Tama63\Beam\Helper\Validate::limit()</full_name>
+        <docblock line="34">
+          <description>Check if a parameter is of an allowed value</description>
+          <long-description></long-description>
+          <tag name="param" line="34" description="&lt;p&gt;Any string&lt;/p&gt;" type="string" variable="$param">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="34" description="&lt;p&gt;An array of acceptable values for $param&lt;/p&gt;" type="array" variable="$allowed">
+            <type>array</type>
+          </tag>
+          <tag name="throws" line="34" description="" type="\Exception">
+            <type>\Exception</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$param</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$allowed</name>
+          <default>array()</default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Tama63\Beam\Helper" line="48" package="Default">
+        <name>length</name>
+        <full_name>\Tama63\Beam\Helper\Validate::length()</full_name>
+        <docblock line="48">
+          <description>Checks if a parameter meets a min length</description>
+          <long-description></long-description>
+          <tag name="param" line="48" description="&lt;p&gt;Any string input&lt;/p&gt;" type="string" variable="$param">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="48" description="&lt;p&gt;Any minimum string length&lt;/p&gt;" type="integer" variable="$length">
+            <type>integer</type>
+          </tag>
+          <tag name="throws" line="48" description="" type="\Exception">
+            <type>\Exception</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$param</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$length</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Tama63\Beam\Helper" line="61" package="Default">
+        <name>json</name>
+        <full_name>\Tama63\Beam\Helper\Validate::json()</full_name>
+        <docblock line="61">
+          <description>Checks if a string is json</description>
+          <long-description></long-description>
+          <tag name="param" line="61" description="&lt;p&gt;Any string&lt;/p&gt;" type="string" variable="$string">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="61" description="" type="boolean">
+            <type>boolean</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$string</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="11" code="PPC:ERR-50005">No summary for class \Tama63\Beam\Helper\Validate</error>
+    </parse_markers>
+    <source>eJylVFFr2zAQfjf4P9wgtEkY88NgD2u2NSuDBjbIQ9nLMoIsn2N1smQkeWko/e87WbaTpQ6smV5s6T59d/d9Z88+VUUVR8l0Gkcwhc/ISpgvF/BVpIaZHeTawPJ22QSvWe0K2t8URlhYGJRMZSEiBUdlEb4t7mBWOFe9TxJd0ZGuDcc32mySFmITwnz0t5I4iiPFSrQV4wh3rGTv3q58BatblBWaKw+IIy6ZtfCdSZExh3H06A+BVijar2kfBgYVM0Tq0ACzwBQI5XCDpoP2V64bIJTiATMYhc1c7Qhf1W6PcoXRWwurLw8cKye06kJJeKnqlFoD65ijR14r7kE+6ziQTgLusb1HS+QwfiXsWtUlGsE73OQQ41eTGhRuD7KPL5d9f2VtHaQILc/l5Gp//ym8Pg2JdVMg/+WrOBSLLNW514tJqbckyW8mazylmnVGqM2hbOHkGMeMYTsYdZxz1Z74VNy3xFKJIZVthi0w/rf8UpSiM+D1Pv8H+PHzlB9q3ZT27NL5vmSYC0VZ/RwGrpdZZI89KhEdcdHMUoeoNq54qT/H0x3iNKwwCoQNlvhFWfcsf6c635OGZq9v2A/bQZkp3H0ZMOvRZ3nhdRtu6ixDOikt3Nt986csaJ9D34hBVxsFqdby3yT0+cYt47Bw9FsJ4R4GFxdU6lqn98jd2DOsM+Q6wx7xfMLbwpyp8VAfQEk/+WFszig2KObTH/lo0Jo=</source>
+  </file>
+  <package name="Default" full_name="Default"/>
+  <package name="global" full_name="global"/>
+  <namespace name="Tama63" full_name="Tama63">
+    <namespace name="Beam" full_name="Tama63\Beam">
+      <namespace name="Helper" full_name="Tama63\Beam\Helper"/>
+    </namespace>
+  </namespace>
+  <deprecated count="0"/>
+</project>

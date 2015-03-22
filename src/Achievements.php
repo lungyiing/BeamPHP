@@ -1,6 +1,9 @@
 <?php
 /**
- * Beam API Library for PHP
+ * Achievements is part of the Beam API Library for PHP
+ *
+ * Achievements provides an interface for the /achievements/ endpoint of the Beam API
+ *
  * @author Chris Ireland
  * @license MIT <http://opensource.org/licenses/MIT>
  */

@@ -14,7 +14,7 @@ class Validate
     /**
      * Validate a parameter as an integer
      *
-     * @param $param
+     * @param mixed $param Any input
      * @throws \Exception
      */
     public static function int($param)
@@ -27,8 +27,8 @@ class Validate
     /**
      * Check if a parameter is of an allowed value
      *
-     * @param array $param
-     * @param $allowed
+     * @param string $param Any string
+     * @param array $allowed An array of acceptable values for $param
      * @throws \Exception
      */
     public static function limit($param, $allowed = [])
@@ -41,11 +41,12 @@ class Validate
     /**
      * Checks if a parameter meets a min length
      *
-     * @param $param
-     * @param $length
+     * @param string $param Any string input
+     * @param int $length Any minimum string length
      * @throws \Exception
      */
-    public static function length($param, $length) {
+    public static function length($param, $length)
+    {
         if (strlen($param) < $length) {
             throw new \Exception('Parameter must meet minimum string length');
         }
@@ -54,10 +55,15 @@ class Validate
     /**
      * Checks if a string is json
      *
-     * @param $string
+     * @param string $string Any string
      * @return bool
      */
-    public static function json($string) {
-        return is_string($string) && is_object(json_decode($string)) ? true : false;
+    public static function json($string)
+    {
+        if (is_string($string) && is_object(json_decode($string))) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }

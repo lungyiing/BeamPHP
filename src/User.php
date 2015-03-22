@@ -1,6 +1,9 @@
 <?php
 /**
- * Beam API Library for PHP
+ * User is part of the Beam API Library for PHP
+ *
+ * User provides an interface for the /users/ endpoint of the Beam API but for single users
+ *
  * @author Chris Ireland
  * @license MIT <http://opensource.org/licenses/MIT>
  */
@@ -8,7 +11,8 @@
 namespace Tama63\Beam;
 
 
-class User extends Helper\Api {
+class User extends Helper\Api
+{
 
     const USER_API = '/users/';
 
@@ -18,7 +22,7 @@ class User extends Helper\Api {
     /**
      * Creates a user instance using an id
      *
-     * @param $userID
+     * @param int $userID The id of a user
      * @throws \Exception
      */
     public function __construct($userID)
@@ -37,7 +41,8 @@ class User extends Helper\Api {
      * @return mixed
      * @throws \Exception
      */
-    public function info() {
+    public function info()
+    {
         return $this->query($this->userEndpoint);
     }
 
@@ -45,12 +50,13 @@ class User extends Helper\Api {
      * Returns a list of the channels a user follows
      * <https://developer.beam.pro/api/user/follows>
      *
-     * @param null $page
-     * @param null $limit
+     * @param null $page Page of results to get
+     * @param null $limit Number of results per page to retrieve
      * @return mixed
      * @throws \Exception
      */
-    public function following($page = null, $limit = null) {
+    public function following($page = null, $limit = null)
+    {
         // Validate inputs
         Helper\Validate::int($page);
         Helper\Validate::int($limit);
@@ -65,7 +71,8 @@ class User extends Helper\Api {
      * @return mixed
      * @throws \Exception
      */
-    public function achievements() {
+    public function achievements()
+    {
         return $this->query($this->userEndpoint . 'achievements');
     }
 }

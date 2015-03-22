@@ -22,7 +22,9 @@ The classes can be initialised by calling (for example):
 
 `$beamUser = new \Tama63\Beam\User($userID);`
 
+## Generating documentation
+* Uses https://github.com/evert/phpdoc-md to generate the documentation
+
 ## Todo
 * Tests
 * Finish other endpoints
-* Improve doc

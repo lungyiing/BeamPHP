@@ -6,6 +6,9 @@
   "require": {
     "guzzlehttp/guzzle": "~5.2"
   },
+  "require-dev": {
+    "evert/phpdoc-md" : "~0.0.7"
+  },
   "autoload": {
     "psr-4": {"Tama63\\Beam\\": "src/"}
   }

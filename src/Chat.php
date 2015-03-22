@@ -1,6 +1,9 @@
 <?php
 /**
- * Beam API Library for PHP
+ * Chat is part of the Beam API Library for PHP
+ *
+ * Chat provides an interface for the /chats/ endpoint of the Beam API
+ *
  * @author Chris Ireland
  * @license MIT <http://opensource.org/licenses/MIT>
  */
@@ -19,7 +22,7 @@ class Chat extends Helper\Api
     /**
      * Create a new chat instance using an id
      *
-     * @param $chatID
+     * @param int $chatID The id of a chat (channel)
      * @throws \Exception
      */
     public function __construct($chatID)
@@ -35,8 +38,8 @@ class Chat extends Helper\Api
      * Returns a list of all the users in a chat
      * <https://developer.beam.pro/api/chat/user-list>
      *
-     * @param null $page
-     * @param null $limit
+     * @param null $page Page of results to get
+     * @param null $limit Number of results per page to retrieve
      * @return mixed
      * @throws \Exception
      */
@@ -53,9 +56,9 @@ class Chat extends Helper\Api
      * Searches for a username in a chat by matching a scope in their username
      * <https://developer.beam.pro/api/chat/user-search>
      *
-     * @param $username
-     * @param null $page
-     * @param null $limit
+     * @param string $username The username to search by
+     * @param null $page Page of results to get
+     * @param null $limit Number of results per page to retrieve
      * @return mixed
      * @throws \Exception
      */

@@ -18,9 +18,9 @@ class Api
     /**
      * Sends a query to the Beam API endpoint with a user defined endpoint
      *
-     * @param $endpoint
-     * @param null $params
-     * @return mixed
+     * @param string $endpoint The url endpoint relative to the Beam API
+     * @param null $params Get parameters to be passed to the endpoint
+     * @return mixed $response Either a plain body or array response
      * @throws \Exception
      */
     protected function query($endpoint, $params = null)
