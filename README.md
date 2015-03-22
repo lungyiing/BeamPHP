@@ -1,4 +1,4 @@
-# BeamPHP
+# BeamPHP ![Packagist badge](https://img.shields.io/packagist/v/tama63/beam.svg?style=flat-square)
 WIP Beam API Library for PHP
 
 ## Installing
